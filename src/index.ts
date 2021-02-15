@@ -166,7 +166,7 @@ export class MyRedis extends Construct {
       const configMapOpts: k8s.KubeConfigMapProps = {
         metadata: {
           name: `${name}-redis-conf`,
-          namespace: namespace
+          namespace: namespace,
         },
         data: {
           'master.conf':
